@@ -191,6 +191,21 @@ align-items: center;
     
 
 }
+.contactoGrilla-auto{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    background-color: rgb(6, 25, 87);
+    padding-bottom: 80px;
+    padding-top: 20px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+    
+
+}
 button{
     padding: 20px;
     border-radius: 20px;
