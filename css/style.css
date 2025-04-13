@@ -168,71 +168,70 @@ align-items: center;
 
 
 /*SECCION BUSCAR TRUEQUE */
-.grillaPosteo{
+/* Estilo general del contenedor de posteos */
+.grillaPosteo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-.posteo{
-    margin-bottom: 200px;
-    margin-top: 50px;
-}
-.contactoGrilla{
-    width: 100%;
-    height: 30px;
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
-    margin-right: 80px;
-    padding-bottom: 50px;
-    padding-top: 20px;
-    border-radius: 20px;
-    
-    
-
-}
-.contactoGrilla-auto{
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
-    margin-right: 80px;
-    padding-bottom: 50px;
-    padding-top: 20px;
-    border-radius: 20px;
-    padding-left: 20px;
-    padding-right: 10px;
-    
-
-}
-button{
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 15px;
-    padding-bottom: 30px;
+    gap: 2rem;
+    padding: 1rem;
+  }
   
-}
-.auto{
-    margin-left:0px;
-    width: 500px;
-}
-.funda{
-    margin-left:100px;
-    width: 300px;
-}
-.cocheBebe{
-    width: 300px;
-    margin-left: 100px;
-}
-.herramientas{
-    width: 400px;
-    margin-left: 0px;
+  /* Cada posteo individual */
+  .posteo {
+    width: 90%;
+    margin-top: 100px ;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Imágenes del posteo */
+  .posteo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Contenedor de botones */
+  .contactoGrilla,
+  .contactoGrilla-auto {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Botones */
+  .botonMg,
+  .botonComentario,
+  .botonPerfil {
+    background-color: #e1306c;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botonMg:hover,
+  .botonComentario:hover,
+  .botonPerfil:hover {
+    background-color: #c72b5e;
+  }
 
-}
-.mueble{
-    margin-left: 0px;
-}
+
 /* SECCION MI PERFIL*/
 
 .contenedorGrid img{
@@ -292,7 +291,7 @@ button{
     background-color: #fff;
 }
 
-/* Sección de categorías */
+/* SECCION CATEGORIAS */
 .categorias {
     padding: 20px;
     text-align: center;
@@ -345,7 +344,7 @@ button{
     color: rgb(6, 25, 87);
 }
 
-/* Seccion planes */
+/* SECCION PLANES */
 .formulario-nombre h1 {
     text-align: center;
     font-size: 36px;
@@ -447,7 +446,7 @@ button{
     
 }
 .eleccionPorcentaje{
-    margin: 150px;
+    margin: 450px;
 }
 .eleccionPorcentaje h1{
     color: rgb(6, 25, 87);
@@ -528,6 +527,81 @@ button{
 
 
 /* RESPONSIVE MOBILE index*/
+
 @media (max-width:500px){
     
+    .logoImagen{
+        padding: 10px;
+     }
+    nav ul{
+       flex-direction: column;   
+       padding-top: 30px;
+    }
+    
+    li a {
+        font-size: 20px;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+   .creador{
+    margin-top: 100px;
+   }
+   .terminos{
+    margin-top: 50px;
+   }
+   .tituloPrincipal{
+    font-size: 20px;
+   }
+   .tituloPresentacion{
+    font-size: 20px;
+   }
+   .tituloTruequedor{
+    font-size: 20px;
+   }
+    }
+
+    /* RESPONSIVE MOBILE planes*/
+
+    @media (max-width:500px){
+       .planes{
+        margin-top: 300px;
+        display: flex;
+        flex-direction: column;
+       }
+       .tituloPlan{
+        display: none;
+        }
+       .plan1{
+        display: none;
+       }
+       .plan2{
+        display: none;
+       }
+
+       .eleccionPorcentaje{
+        margin: 0px;
+       }
+       .eleccionTitulo{
+        font-size: 5px;
+       }
+
+       .formulario-contacto{
+        width: 90%;
+        margin-bottom: 140px;
+       }
+       .iframeBanner{
+       display: none;
+       }
+    }
+/* RESPONSIVE MOBILE buscar trueque*/
+@media (max-width:500px){
+    .grillaPosteo{
+        margin-top: 400px;
+    }
+    .pagination{
+        display: flex;
+        flex-direction: row;
+    }
 }
