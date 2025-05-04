@@ -1,3 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+body{
+    background-color: rgb(255, 255, 255);   
+ }
 //header//
 header {
     background-color: rgb(6, 25, 87);
@@ -490,5 +498,205 @@ footer {
     h4 {
       padding-top: 50px;
       padding-bottom: 60px;
+    }
+  }
+//mediaQ index//
+@media (max-width: 500px) {
+    .logoImagen {
+      padding: 10px;
+    }
+  
+    nav {
+      ul {
+        flex-direction: column;
+        padding-top: 30px;
+      }
+    }
+  
+    li {
+      a {
+        font-size: 20px;
+      }
+    }
+  
+    footer {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .creador {
+      margin-top: 100px;
+    }
+  
+    .terminos {
+      margin-top: 50px;
+    }
+  
+    .tituloPrincipal,
+    .tituloPresentacion,
+    .tituloTruequedor {
+      font-size: 20px;
+    }
+  }
+  //mediaQ planes//
+  @media (max-width: 500px) {
+    .planes {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .tituloPlan,
+    .plan1,
+    .plan2,
+    .iframeBanner {
+      display: none;
+    }
+  
+    .eleccionPorcentaje {
+      margin: 0px;
+    }
+  
+    .eleccionTitulo {
+      font-size: 5px;
+    }
+  
+    .formulario-contacto {
+      width: 50%;
+      margin-bottom: 140px;
+    }
+
+  }
+  //mediaQ buscar trueque//
+  @media (max-width: 500px) {
+    .grillaPosteo {
+      margin-top: 40px;
+    }
+  
+    .pagination {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  //mediaQ categorias//
+  @media (max-width: 500px) {
+    .listaCategorias {
+      li {
+        display: block;
+        margin: 10px auto;
+
+        a {
+          font-size: 1rem;
+          padding: 8px 15px;
+        }
+      }
+    }
+    .categorias h2{
+        margin-top: -100px;
+    }
+
+    .bannerCategoria {
+      font-size: 1rem;
+
+      img {
+        width: 90%;
+      }
+
+      h1 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  //mediaQ mi perfil//
+  @media (max-width: 500px) {
+    .contenedorGrid {
+      grid-template-areas:
+        "titulo"
+        "titulo2"
+        "info"
+        "infoFinal"
+        "productos"
+        "producto2"
+        "producto3"
+        "valoracion"
+        "insignia1"
+        "insignias";
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(10, auto);
+      margin-top: 100px;
+  
+      img {
+        width: 40%;
+        height: auto;
+      }
+  
+      .truequedorPrincipal,
+      .silueta,
+      .datosPersonales,
+      .productosGrid,
+      .imagenesProductos1,
+      .imagenesProductos2,
+      .imagenesProductos3,
+      .valoracion,
+      .insignias,
+      .insignias1 {
+        text-align: center;
+        width: 100%;
+      }
+    }
+    .productosGrid{
+        display: none;
+    }
+    .productosGrid{
+        display: none;
+  }
+    .truequedorPrincipal{
+        display: none;
+    }
+    .valoracion1{
+        display: none;
+    }
+}
+//mediaQ buena fe//
+@media (max-width: 500px) {
+    .buenaFe {
+      font-size: 16px;
+      margin: 300px 10px 100px 20px;
+  
+      h1,
+      h2,
+      h3 {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        font-size: 18px;
+      }
+    }
+  }
+  //mediaQ terminos y condiciones//
+  @media (max-width: 500px) {
+    .terminosCondiciones {
+      font-size: 16px;
+      margin: 300px 10px 100px 10px;
+  
+      h1,
+      h3 {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        font-size: 18px;
+      }
+  
+      h2 {
+        padding-top: 5px;
+        padding-bottom: 15px;
+        font-size: 18px;
+      }
+  
+      h4 {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        font-size: 14px;
+      }
     }
   }
