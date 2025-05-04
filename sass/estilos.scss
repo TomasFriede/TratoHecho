@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  // General //
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  // SECCIÓN BUSCAR TRUEQUE //
+  .grillaPosteo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .posteo {
+    width: 90%;
+    margin-top: 100px;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+  }
+  
+  .contactoGrilla,
+  .contactoGrilla-auto {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .botonMg,
+  .botonComentario,
+  .botonPerfil {
+    background-color: #e1306c;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #c72b5e;
+    }
+  }
+  
+  // SECCIÓN MI PERFIL //
+  .contenedorGrid {
+    display: grid;
+    grid-template-areas:
+      "titulo titulo2"
+      "info productos"
+      "infoFinal productos"
+      "valoracion1 ."
+      "valoracion producto2"
+      "insignia1 ."
+      "insignias producto3";
+    grid-template-columns: 30% 60%;
+    grid-template-rows: 100px 250px 300px 50px 400px 50px 400px;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 200px;
+  
+    img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+  
+  .truequedorPrincipal { grid-area: titulo; }
+  .silueta { grid-area: info; }
+  .datosPersonales {
+    grid-area: infoFinal;
+    background-color: #fff;
+  }
+  .productosGrid { grid-area: titulo2; }
+  .imagenesProductos1 { grid-area: productos; }
+  .imagenesProductos2 { grid-area: producto2; }
+  .imagenesProductos3 { grid-area: producto3; }
+  .valoracion { grid-area: valoracion; }
+  .insignias { grid-area: insignias; }
+  .insignias1 { grid-area: insignia1; }
+
+  // Categorías //
+.contenedor-categorias {
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+  
+    .categoria {
+      background-color: #ffffff;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+  
+      &:hover {
+        transform: scale(1.05);
+        background-color: #cde6ff;
+      }
+    }
+  }
+  
+  // Planes //
+  .planes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    margin: 40px auto;
+  
+    .plan {
+      background-color: #ffffff;
+      border: 2px solid #ddd;
+      border-radius: 12px;
+      width: 280px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+  
+      &:hover {
+        border-color: #3498db;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      }
+  
+      h4 {
+        font-size: 1.5rem;
+        color: #333;
+      }
+  
+      ul {
+        margin-top: 10px;
+        list-style: none;
+        padding: 0;
+  
+        li {
+          margin-bottom: 8px;
+          color: #666;
+        }
+      }
+  
+      .precio {
+        font-size: 1.8rem;
+        color: #2ecc71;
+        margin-top: 15px;
+      }
+  
+      .btn-seleccionar {
+        margin-top: 20px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #2980b9;
+        }
+      }
+    }
+  }
+  
+ 
+ 
