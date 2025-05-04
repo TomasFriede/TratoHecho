@@ -1,11 +1,175 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+header {
+  background-color: rgb(6, 25, 87);
+}
+header .logoContainer {
+  height: 100px;
+}
+header .logoImagen {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+}
+header nav li {
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+  border: outset 5px;
+  margin-right: 100px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+header nav li a {
+  text-decoration: none;
+  display: flex;
+  color: rgb(0, 0, 0);
 }
 
-body {
-  background-color: rgb(255, 255, 255);
+footer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgb(6, 25, 87);
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+}
+footer a {
+  color: white;
+  font-size: 15px;
+}
+footer img {
+  height: 66px;
+  border-radius: 40px;
+}
+footer h3 {
+  font-size: 15px;
+  margin-top: 5px;
+}
+footer .terminos {
+  display: flex;
+  align-items: center;
+}
+footer .terminos a {
+  margin-right: 50px;
+}
+footer .terminos .buenfe {
+  margin-left: 20px;
+}
+footer .redes {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+}
+footer .creador {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin: 5px;
+  padding: 5px;
+}
+footer .copyRight {
+  color: white;
+  display: flex;
+  text-align: center;
+  margin-left: 350px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.tituloPrincipal {
+  text-align: center;
+  color: rgb(6, 25, 87);
+  margin: 50px;
+  font-size: 30px;
+}
+.tituloPrincipal p {
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+}
+
+.tituloPresentacion {
+  margin: 100px;
+  text-align: center;
+  font-size: 30px;
+}
+.tituloPresentacion h2 {
+  margin-bottom: 20px;
+  color: rgb(6, 25, 87);
+}
+
+.tituloTruequedor {
+  margin: 100px;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.tituloTruequedor h2 {
+  margin-bottom: 20px;
+  color: rgb(6, 25, 87);
+}
+
+.contenedorGrid {
+  display: grid;
+  grid-template-areas: "titulo titulo2" "info productos" "infoFinal productos" "valoracion1 . " "valoracion producto2" "insignia1 . " "insignias producto3";
+  grid-template-columns: 30% 60%;
+  grid-template-rows: 100px 250px 300px 50px 400px 50px 400px;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 200px;
+}
+.contenedorGrid img {
+  width: 50%;
+  height: 50%;
+}
+.contenedorGrid .truequedorPrincipal {
+  grid-area: titulo;
+}
+.contenedorGrid .silueta {
+  grid-area: info;
+}
+.contenedorGrid .datosPersonales {
+  grid-area: infoFinal;
+  background-color: #fff;
+}
+.contenedorGrid .productosGrid {
+  grid-area: titulo2;
+}
+.contenedorGrid .imagenesProductos1 {
+  grid-area: productos;
+}
+.contenedorGrid .imagenesProductos2 {
+  grid-area: producto2;
+}
+.contenedorGrid .imagenesProductos3 {
+  grid-area: producto3;
+}
+.contenedorGrid .valoracion {
+  grid-area: valoracion;
+}
+.contenedorGrid .insignias {
+  grid-area: insignias;
+}
+.contenedorGrid .insignias1 {
+  grid-area: insignia1;
 }
 
 .grillaPosteo {
@@ -15,8 +179,7 @@ body {
   gap: 2rem;
   padding: 1rem;
 }
-
-.posteo {
+.grillaPosteo .posteo {
   width: 90%;
   margin-top: 100px;
   max-width: 400px;
@@ -28,15 +191,14 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.posteo img {
+.grillaPosteo .posteo img {
   width: 100%;
   height: auto;
   object-fit: cover;
   display: block;
 }
-
-.contactoGrilla,
-.contactoGrilla-auto {
+.grillaPosteo .posteo .contactoGrilla,
+.grillaPosteo .posteo .contactoGrilla-auto {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -45,10 +207,12 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
-
-.botonMg,
-.botonComentario,
-.botonPerfil {
+.grillaPosteo .posteo .contactoGrilla .botonMg,
+.grillaPosteo .posteo .contactoGrilla .botonComentario,
+.grillaPosteo .posteo .contactoGrilla .botonPerfil,
+.grillaPosteo .posteo .contactoGrilla-auto .botonMg,
+.grillaPosteo .posteo .contactoGrilla-auto .botonComentario,
+.grillaPosteo .posteo .contactoGrilla-auto .botonPerfil {
   background-color: #e1306c;
   color: white;
   border: none;
@@ -58,140 +222,204 @@ body {
   font-size: 1rem;
   transition: background-color 0.3s ease;
 }
-.botonMg:hover,
-.botonComentario:hover,
-.botonPerfil:hover {
+.grillaPosteo .posteo .contactoGrilla .botonMg:hover,
+.grillaPosteo .posteo .contactoGrilla .botonComentario:hover,
+.grillaPosteo .posteo .contactoGrilla .botonPerfil:hover,
+.grillaPosteo .posteo .contactoGrilla-auto .botonMg:hover,
+.grillaPosteo .posteo .contactoGrilla-auto .botonComentario:hover,
+.grillaPosteo .posteo .contactoGrilla-auto .botonPerfil:hover {
   background-color: #c72b5e;
 }
 
-.contenedorGrid {
-  display: grid;
-  grid-template-areas: "titulo titulo2" "info productos" "infoFinal productos" "valoracion1 ." "valoracion producto2" "insignia1 ." "insignias producto3";
-  grid-template-columns: 30% 60%;
-  grid-template-rows: 100px 250px 300px 50px 400px 50px 400px;
-  justify-content: center;
-  justify-items: center;
-  margin-top: 200px;
-}
-.contenedorGrid img {
-  width: 50%;
-  height: 50%;
-}
-
-.truequedorPrincipal {
-  grid-area: titulo;
-}
-
-.silueta {
-  grid-area: info;
-}
-
-.datosPersonales {
-  grid-area: infoFinal;
-  background-color: #fff;
-}
-
-.productosGrid {
-  grid-area: titulo2;
-}
-
-.imagenesProductos1 {
-  grid-area: productos;
-}
-
-.imagenesProductos2 {
-  grid-area: producto2;
-}
-
-.imagenesProductos3 {
-  grid-area: producto3;
-}
-
-.valoracion {
-  grid-area: valoracion;
-}
-
-.insignias {
-  grid-area: insignias;
-}
-
-.insignias1 {
-  grid-area: insignia1;
-}
-
-.contenedor-categorias {
-  margin: 20px auto;
+.categorias {
   padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  background-color: #f4f4f4;
-  border-radius: 8px;
-}
-.contenedor-categorias .categoria {
-  background-color: #ffffff;
-  padding: 15px;
   text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: transform 0.2s ease;
 }
-.contenedor-categorias .categoria:hover {
-  transform: scale(1.05);
-  background-color: #cde6ff;
+.categorias h2 {
+  padding-top: 150px;
+  padding-bottom: 40px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
-
-.planes-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  padding: 20px;
-  margin: 40px auto;
-}
-.planes-container .plan {
-  background-color: #ffffff;
-  border: 2px solid #ddd;
-  border-radius: 12px;
-  width: 280px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-.planes-container .plan:hover {
-  border-color: #3498db;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-.planes-container .plan h4 {
-  font-size: 1.5rem;
-  color: #333;
-}
-.planes-container .plan ul {
-  margin-top: 10px;
+.categorias .listaCategorias {
   list-style: none;
   padding: 0;
+  background-color: #ffffff;
 }
-.planes-container .plan ul li {
-  margin-bottom: 8px;
-  color: #666;
+.categorias .listaCategorias li {
+  display: inline-block;
+  margin: 20px 15px;
 }
-.planes-container .plan .precio {
-  font-size: 1.8rem;
-  color: #2ecc71;
-  margin-top: 15px;
+.categorias .listaCategorias li a {
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  background-color: #fcfcfc;
+  border: 2px solid rgb(158, 158, 158);
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
-.planes-container .plan .btn-seleccionar {
-  margin-top: 20px;
-  background-color: #3498db;
+.categorias .listaCategorias li a:hover {
+  background-color: #99ef94;
   color: white;
-  border: none;
-  padding: 10px 15px;
+}
+.categorias .bannerCategoria {
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+}
+.categorias .bannerCategoria img {
+  width: 400px;
+}
+.categorias .bannerCategoria h1 {
+  color: rgb(6, 25, 87);
+}
+
+.formulario-nombre h1 {
+  text-align: center;
+  font-size: 36px;
+  color: rgb(6, 25, 87);
+  margin-top: 20px;
+}
+
+.formulario-contacto {
+  width: 50%;
+  max-width: 600px;
+  margin: 30px auto;
+  margin-top: 60px;
+  padding: 20px;
+  background-color: rgb(6, 25, 87);
   border-radius: 8px;
+}
+.formulario-contacto label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 40px;
+  border: 1px solid #ebe6e6;
+  border-radius: 4px;
+  font-size: 20px;
+  color: #333;
+}
+.formulario-contacto textarea {
+  height: 100px;
+}
+
+.planes {
+  display: grid;
+  grid-template-areas: ". tituloPlan ." "plan1 . plan2" "plan1 . plan2" "imgPlan1 . imgPlan2";
+  grid-template-columns: 25% 40% 25%;
+  grid-template-rows: 100px 100px 50px 300px;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 100px;
+}
+.planes .tituloPlan {
+  grid-area: tituloPlan;
+  font-size: 35px;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 40px;
+  color: rgb(6, 25, 87);
+  transition: all 0.3s ease;
+}
+.planes .tituloPlan:hover {
+  color: rgb(20, 145, 177);
+  transform: scale(1.5);
   cursor: pointer;
 }
-.planes-container .plan .btn-seleccionar:hover {
-  background-color: #2980b9;
+.planes .plan1,
+.planes .plan2 {
+  font-size: 25px;
+  background-color: rgb(6, 25, 87);
+  color: #fff;
+  margin-bottom: 50px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 40px;
+}
+.planes .plan1 {
+  grid-area: plan1;
+}
+.planes .plan2 {
+  grid-area: plan2;
+}
+.planes .imgPlan1,
+.planes .imgPlan2 {
+  width: 90%;
+}
+.planes .imgPlan1 {
+  grid-area: imgPlan1;
+}
+.planes .imgPlan2 {
+  grid-area: imgPlan2;
+}
+
+.eleccionPorcentaje {
+  margin: 450px;
+}
+.eleccionPorcentaje h1 {
+  color: rgb(6, 25, 87);
+  margin-left: 120px;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.eleccionPorcentaje .eleccionTitulo {
+  color: black;
+  transition: all 0.3s ease;
+}
+.eleccionPorcentaje .eleccionTitulo:hover {
+  color: rgb(20, 145, 177);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.iframeBanner {
+  display: flex;
+  justify-content: center;
+  margin: 200px;
+  height: 600px;
+}
+.iframeBanner .videoIframe {
+  width: 100%;
+  height: auto;
+}
+
+.buenaFe {
+  font-size: 20px;
+  margin: 40px 15px;
+}
+.buenaFe h1,
+.buenaFe h2,
+.buenaFe h3 {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.terminosCondiciones {
+  font-size: 20px;
+  margin: 40px 15px;
+}
+.terminosCondiciones h1,
+.terminosCondiciones h3 {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.terminosCondiciones h2 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.terminosCondiciones h4 {
+  padding-top: 50px;
+  padding-bottom: 60px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
