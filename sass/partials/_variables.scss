@@ -1,0 +1,7 @@
+@mixin estilo-texto($color, $size, $padding-top: 0, $padding-bottom: 0) {
+    color: $color;
+    font-size: $size;
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+
+   
